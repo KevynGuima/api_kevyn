@@ -7,10 +7,17 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Testar conexão",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
 					"raw": "localhost:3000",
 					"host": [
@@ -28,7 +35,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Marcos\",\r\n    \"salario\": 8000,\r\n    \"aprovado\": true\r\n}",
+					"raw": "{\r\n    \"nome\": \"Matheus Battisti\",\r\n    \"salario\": 8000,\r\n    \"aprovado\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -86,7 +93,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/pessoas/62953a7c8385e500ca1f400c",
+					"raw": "http://localhost:3000/pessoas/62853d26f750472c3b1bea63",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -94,7 +101,56 @@
 					"port": "3000",
 					"path": [
 						"pessoas",
-						"62953a7c8385e500ca1f400c"
+						"62853d26f750472c3b1bea63"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar pessoa",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Anderson Vanin\",\r\n    \"salario\": 5000,\r\n    \"aprovado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pessoas/62853d26f750472c3b1bea63",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pessoas",
+						"62853d26f750472c3b1bea63"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar pessoa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pessoas/628e38bf4247f3da92ee6826",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pessoas",
+						"628e38bf4247f3da92ee6826"
 					]
 				}
 			},
