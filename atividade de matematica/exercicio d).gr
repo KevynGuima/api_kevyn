@@ -1,0 +1,32 @@
+[saved-setup]
+charset=UTF-8
+
+[labels]
+xaxis=x
+yaxis=y
+
+[grid]
+left=-8
+right=8
+top=auto
+bottom=auto
+
+[options]
+paper=trig
+detail=grid
+axes=1808
+
+[functions]
+
+[equations]
+f(x)=cos x
+f(x)=2cos x/2
+
+[eqcolors]
+eq0=6
+eq1=5
+next=7
+
+[eqstyles]
+eq0=0
+eq1=0
